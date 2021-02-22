@@ -1,0 +1,41 @@
+// Resets
+* {
+    all: unset;
+    display: revert;
+    &::before, ::after {
+        box-sizing: border-box;
+    }
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+// Variables
+$font1: 'Poppins', sans-serif;
+$weight2: 200;
+$weight4: 400;
+$weight6: 600;
+// Breakpoints
+$mobile: 450px;
+$tablet: 650px;
+$desktop: 1440px;
+// Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$veryDarkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+// Body
+body {
+    background-color: $veryLightGray;
+    height: 100vh;
+    max-width: 1500px; // Max the width of the screen
+    margin: 0 auto; // Center everything
+    font-family: $font1;
+}
+
+// Importing files
+@import "base";
